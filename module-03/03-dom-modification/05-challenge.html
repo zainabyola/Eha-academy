@@ -24,7 +24,22 @@
                 border-radius: 50%;
                 background: rgb(237, 237, 237)
             }
-            
+            .planet2 {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                margin-top: 30px;
+            }
+            .moon2 {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+            }
         </style>
     </head>
     <body>
@@ -41,12 +56,12 @@
         document.body.appendChild(mercurymoonEl);
 
         var neptuneEl = document.createElement("div");
-        neptuneEl.className = "planet";
+        neptuneEl.className = "planet2";
         neptuneEl.style.backgroundColor = "#bb948c";
         document.body.appendChild(neptuneEl);
 
         var neptunemoonEl = document.createElement("div");
-        neptunemoonEl.className = "moon";
+        neptunemoonEl.className = "moon2";
         document.body.appendChild(neptunemoonEl);
 
         var marsEl = document.createElement("div");
