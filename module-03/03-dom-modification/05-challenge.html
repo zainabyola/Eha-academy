@@ -15,21 +15,49 @@
                 text-align: center;
                 padding: 10px;
                 position: relative;
+                margin-top: 30px;
             }
             .moon {
                 position: absolute;
                 width: 30px;
                 height: 30px;
                 border-radius: 50%;
-                background: rgb(237, 237, 237);
+                background: rgb(237, 237, 237)
             }
+            
         </style>
     </head>
     <body>
 
     
     <script>
-        
+        var mercuryEl = document.createElement("div");
+        mercuryEl.className = "planet";
+        mercuryEl.style.backgroundColor = "#d5dabe";
+        document.body.appendChild(mercuryEl);
+
+        var mercurymoonEl = document.createElement("div");
+        mercurymoonEl.className = "moon";
+        document.body.appendChild(mercurymoonEl);
+
+        var neptuneEl = document.createElement("div");
+        neptuneEl.className = "planet";
+        neptuneEl.style.backgroundColor = "#bb948c";
+        document.body.appendChild(neptuneEl);
+
+        var neptunemoonEl = document.createElement("div");
+        neptunemoonEl.className = "moon";
+        document.body.appendChild(neptunemoonEl);
+
+        var marsEl = document.createElement("div");
+        marsEl.className = "planet";
+        marsEl.style.backgroundColor = "#b6cee1";
+        document.body.appendChild(marsEl);
+
+        var marsmoonEl = document.createElement("div");
+        marsmoonEl.className = "moon";
+        document.body.appendChild(marsmoonEl);
+
     </script>
     </body>
 </html>
