@@ -24,11 +24,26 @@
         var libButton = document.getElementById('lib-button');
         var libIt = function() {
             var storyDiv = document.getElementById("story");
-            storyDiv.innerHTML = "??Your story here";
-        };
+            var noun = document.getElementById("noun").value;
+            var adjective = document.getElementById("adjective").value;
+            var person = document.getElementById("person").value;
+            storyDiv.innerHTML ="Once open a time there was a " + adjective + " boy living in a villege his name was " + person + " This " + person + 
+            " concerns a shepherd<br>boy who repeatedly tricks nearby villegers into  thinking a " + noun + " is attacking his flock. When a " + noun +  
+            " actually does appear,<br> the villegers do not believe. The boy cries for help, and the flock is destroyed."       
+          };
         libButton.addEventListener('click', libIt);
         
     </script>
   
  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
